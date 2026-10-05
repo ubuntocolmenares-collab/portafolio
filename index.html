@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio | Desarrolladora de software</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <span class="logo">&lt;/&gt; Mi portafolio</span>
+  <nav id="nav" aria-label="Secciones"></nav>
+  <button id="theme" type="button" aria-label="Cambiar tema">Tema</button>
+</header>
+
+<main id="track">
+  <section id="inicio" data-name="Inicio"><div class="wrap hero">
+    <div>
+      <div class="term" aria-hidden="true"><span id="typed"></span><i></i></div>
+      <h1>Hola, soy desarrolladora de software.</h1>
+      <p class="lead">Construyo páginas web con HTML, CSS y JavaScript, y aprendo a trabajar en Linux todos los días.</p>
+      <button class="btn" data-go="3">Ver mis proyectos</button>
+      <button class="btn alt" data-go="4">Contáctame</button>
+    </div>
+    <div class="photo"><img src="img/foto.jpg" alt="Retrato de la desarrolladora con saco negro y blusa blanca"></div>
+  </div></section>
+
+  <section id="sobre" data-name="Sobre mí"><div class="wrap two">
+    <div><h2>Sobre mí</h2>
+      <p>Soy desarrolladora de software. Me gusta convertir ideas en páginas claras, rápidas y fáciles de usar.</p><br>
+      <p>Ahora estoy haciendo una práctica en Linux donde creo un sitio web completo con HTML, CSS y JavaScript, trabajando desde la terminal.</p></div>
+    <div class="card"><h3>Lo que busco</h3>
+      <p>Un equipo donde pueda seguir aprendiendo, escribir código limpio y construir cosas que la gente use.</p></div>
+  </div></section>
+
+  <section id="habilidades" data-name="Habilidades"><div class="wrap">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="card"><h3>HTML</h3><p>Estructura y accesibilidad.</p><div class="bar"><b data-w="90%"></b></div></div>
+      <div class="card"><h3>CSS</h3><p>Diseño adaptable y animaciones.</p><div class="bar"><b data-w="85%"></b></div></div>
+      <div class="card"><h3>JavaScript</h3><p>Interacción y lógica en el navegador.</p><div class="bar"><b data-w="75%"></b></div></div>
+      <div class="card"><h3>Linux</h3><p>Terminal y comandos del día a día.</p><div class="bar"><b data-w="65%"></b></div></div>
+    </div>
+  </div></section>
+
+  <section id="proyectos" data-name="Proyectos"><div class="wrap projects">
+    <h2>Proyectos</h2>
+    <div class="skills">
+      <div class="card"><span class="tag">En Linux</span><h3>Sitio web de la práctica</h3><p>Página completa con HTML, CSS y JavaScript creada desde la terminal.</p></div>
+      <div class="card"><span class="tag">Próximamente</span><h3>Proyecto 2</h3><p>Describe aquí lo que hiciste y qué problema resuelve.</p></div>
+      <div class="card"><span class="tag">Próximamente</span><h3>Proyecto 3</h3><p>Agrega tecnologías usadas y un enlace al código.</p></div>
+    </div>
+  </div></section>
+
+  <section id="contacto" data-name="Contacto"><div class="wrap two">
+    <div><h2>Hablemos</h2><p>Cuéntame sobre tu proyecto u oportunidad y te respondo pronto.</p></div>
+    <form id="f" novalidate>
+      <input id="n" placeholder="Tu nombre" aria-label="Tu nombre" required>
+      <input id="e" type="email" placeholder="Tu correo" aria-label="Tu correo" required>
+      <textarea id="m" rows="4" placeholder="Tu mensaje" aria-label="Tu mensaje" required></textarea>
+      <button class="btn" type="submit">Enviar mensaje</button>
+      <div class="msg" id="msg" role="status"></div>
+    </form>
+  </div></section>
+</main>
+<div class="dots" id="dots"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
